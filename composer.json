@@ -1,6 +1,6 @@
 {
   "name": "baas/generator",
-  "description": "Laravel Dataobject generator",
+  "description": "Baas Laravel Dataobject generator",
   "keywords": [
     "generator",
     "laravel",
