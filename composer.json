@@ -1,0 +1,49 @@
+{
+  "name": "baas/generator",
+  "description": "Laravel Dataobject generator",
+  "keywords": [
+    "generator",
+    "laravel",
+    "baas",
+    "brains-as-a-service",
+    "roland"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roland*",
+      "email": "roland@baas.email",
+      "homepage": "http://brains-as-a-service.nl",
+      "role": "Daydreamer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Baas\\Generator\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Baas\\Generator\\BaasGeneratorServiceProvider"
+      ],
+      "aliases": {
+        "BDO": "Baas\\Generator\\Facades\\BaasDataObject"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
