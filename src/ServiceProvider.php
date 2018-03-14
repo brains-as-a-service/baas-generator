@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class BaasGeneratorServiceProvider extends BaseServiceProvider {
+class ServiceProvider extends BaseServiceProvider {
 
 	/**
 	 * Get the services provided by the provider.
@@ -42,7 +42,7 @@ class BaasGeneratorServiceProvider extends BaseServiceProvider {
 		$this->mergeConfigFrom($configFile, 'baasgenerator');
 
 		$this->publishes([
-			$configFile => config_path('config.php')
+			$configFile => config_path('baasgenerator.php')
 		]);
 
 		$this->registerBaasRoutes();

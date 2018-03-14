@@ -29,6 +29,14 @@
     }
   },
   "extra": {
+    "laravel": {
+      "providers": [
+        "Baas\\Generator\\ServiceProvider"
+      ],
+      "aliases": {
+        "BDO": "Baas\\Generator\\Facades\\BaasDataObject"
+      }
+    },
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
