@@ -45,7 +45,7 @@ class BaasGeneratorServiceProvider extends BaseServiceProvider {
 			$configFile => config_path('config.php')
 		]);
 
-		$this->registerBaasGenerator();
+		$this->registerBaasRoutes();
 	}
 
 	// This method can be overridden in a child class
