@@ -24,22 +24,11 @@
     "laravel/framework": "5.5.*"
   },
   "autoload": {
-    "psr-4": {
-      "Baas\\Generator\\": "src"
-    },
-    "files": [
-      "src/helpers.php"
-    ]
+    "psr-0": {
+      "Baas\\Generator\\": "src/"
+    }
   },
   "extra": {
-    "laravel": {
-      "providers": [
-        "Baas\\Generator\\BaasGeneratorServiceProvider"
-      ],
-      "aliases": {
-        "BDO": "Baas\\Generator\\Facades\\BaasDataObject"
-      }
-    },
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
